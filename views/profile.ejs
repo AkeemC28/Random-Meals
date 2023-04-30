@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+    <title>Random Meals</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Anton&family=Asset&family=Bangers&family=Bodoni+Moda:opsz@6..96&family=Cherry+Cream+Soda&family=Chicle&family=Creepster&family=Delicious+Handrawn&family=Domine&family=Fjalla+One&family=Fuzzy+Bubbles&family=Gelasio&family=Germania+One&family=Lato:ital,wght@0,400;1,300&family=Orbitron&family=Oswald&family=Oxygen:wght@700&family=Press+Start+2P&family=Questrial&family=Roboto&family=Sedgwick+Ave&family=Tilt+Warp&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+
+    <div class="page-header text-center">
+        <h1></span>Random Meals</h1>
+        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    </div>
+
+    <div class="row">
+
+        <!-- LOCAL INFORMATION -->
+        <!-- <div class="col-sm-6">
+            <div class="well">
+                <h3><span class="fa fa-user"></span> User Info</h3>
+
+                <% if (user.local.email) { %>
+                    <p>
+                        <!- <strong>id</strong>: <%= user._id %><br> -->
+                        <!-- <strong>email</strong>: <%= user.local.email %><br> -->
+                        <!-- <strong>password</strong>: <%= user.local.password %> -->
+                    <!-- </p>
+
+                    <a href="/unlink/local" class="btn btn-default">Unlink</a>
+                <% } else { %>
+                    <a href="/connect/local" class="btn btn-default">Connect Local</a>
+                <% } %>
+
+            </div> -->
+        </div>
+        <div class="col-sm-6">
+          <h3>Meal Of The Day</h3>
+          <ul class="messages">
+          <% for(var i=0; i<messages.length; i++) {%>
+            <li class="message">
+              <span><%= messages[i].name %></span>
+              <span><%= messages[i].msg %></span>
+              <span><%= messages[i].drink %></span>
+              <!-- <span><%= messages[i].thumbUp %></span>
+              <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
+              <span><i class="fa fa-thumbs-down" aria-hidden="true"></i></span> -->
+              <span><i class="ph ph-trash"></i></span>
+            </li>
+          <% } %>
+          </ul>
+<!-- 
+          <h4>Write Your Recipe</h4> -->
+        <% if (user.local.email) { %>
+          <form action="/messages" method="POST">
+          
+            <input type="button" value="Protein" onclick="randomProtein()" />
+            <input type="text" value="" name="name" placeholder="" id="meatContainer" >
+            <input type="button" value="Veggie" onclick="randomVeggies()" />
+            <input type="text" value="" name="msg" placeholder="" id="vegContainer">
+            <span> Type in a Drink: <input type="text" value="" name="drink" placeholder="" class="drink"></span>
+            <button type="submit">Submit</button>
+            
+          </form>
+        </div>
+        <% } %>
+
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>

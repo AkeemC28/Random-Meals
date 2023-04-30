@@ -1,0 +1,94 @@
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+  background: url('/img/baking.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page-header {
+  border-bottom: none;
+}
+img{
+  height: 200px;
+}
+html{
+  font-family: "Chicle", sans-serif;
+  font-size: 62.5%;
+}
+.btn-default{
+  color: #FFFFFF;
+  background: 2px 2px rgb(179, 207, 232);
+}
+h1{
+  font-size: 8rem;
+  font-family: "Chicle", sans-serif;
+  color: #FFFFFF;
+  text-shadow: 4px 4px rgb(179, 207, 232);
+}
+.col-sm-6{
+  width: 100%;
+  text-align: center;
+  font-family: "Chicle", sans-serif;
+  color: #FFFFFF;
+}
+h3{
+  color: #FFFFFF;
+  text-shadow: 2px 2px rgb(179, 207, 232);
+  font-family: "Chicle", sans-serif;
+  font-size: 4rem;
+  margin-bottom: 50px;
+}
+button{
+  color: #FFFFFF;
+  background: 2px 2px rgb(179, 207, 232);
+}
+button{
+  color: #FFFFFF;
+  background: 2px 2px rgb(179, 207, 232);
+}
+#proteinButton{
+    color: #FFFFFF;
+    background: 2px 2px rgb(179, 207, 232);
+}
+#veggieButton{
+  color: #FFFFFF;
+  background: 2px 2px rgb(179, 207, 232);
+}
+input{
+  color: rgb(179, 207, 232);
+
+}
+li{
+  color: #FFFFFF;
+  text-shadow: 2px 2px rgb(179, 207, 232); ;
+
+}
+.container .jumbotron{
+  background: 2px 2px rgb(179, 207, 232);
+}
+.jumbotron h1{
+  font-size: 8rem;
+  font-family: "Chicle", sans-serif;
+  color: #FFFFFF;
+}
+.jumbotron p{
+  font-family: "Chicle", sans-serif;
+  font-size: 62.5%;
+  color: #FFFFFF;
+  font-size: 2rem;
+  margin-top: 10px;
+}
+.drink{
+  color: rgb(179, 207, 232);
+}
+.loginSpace{
+  width: 50%;
+}
+.signUp{
+  width: 50%;
+}
+.btn-lg{
+  color: #FFFFFF;
+  background: 2px 2px rgb(179, 207, 232);
+  border: #FFFFFF;;
+}
